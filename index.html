@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SNOW ALP: Очистка снега и наледи с крыш</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -13,16 +14,20 @@
     <div class="body-container">
         <header class="page-header">
             <nav class="main-nav">
-                <a class="main-nav__logo">ТУТ будет ЛОГО</a>
-                <p class="main-nav__text">Чистка снега и наледи с кровли</p>
-                <button class="main-nav__toggler"></button>
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">Цены</li>
-                    <li class="site-list__item">Преимущества</li>
-                    <li class="site-list__item">Отзывы</li>
-                    <li class="site-list__item">Контакты</li>
-                </ul>
-                <p class="main-nav__phone">+7 495 335 53 53</p>
+                <div class="main-nav__logo-wrapper">
+                    <a class="main-nav__logo">ТУТ будет ЛОГО</a>
+                    <p class="main-nav__text">Чистка снега и наледи с кровли</p>
+                </div>
+                <div class="main-nav__menu-wrapper">
+                    <button class="main-nav__toggler"><span class="main-nav__burger"></span></button>
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item">Цены</li>
+                        <li class="site-list__item">Преимущества</li>
+                        <li class="site-list__item">Отзывы</li>
+                        <li class="site-list__item">Контакты</li>
+                    </ul>
+                    <p class="main-nav__phone">+7 495 <span>335 53 53</span></p>
+                </div>
             </nav>
         </header>
         <main class="page-main">
@@ -35,10 +40,10 @@
                     <input class="form__input" type="text" placeholder="Константин Сыромятников"></input>
                     <label class="form__label"></label>
                     <input class="form__input" type="tel" placeholder="+7 ( ___ ) ___ - __ - __"></input>
-					<label class="form__label--checkbox">
-						<input type="checkbox">Я согласен с <a class="form__link" href="#">политикой конфиденциальности</a> и даю согласие на обработку персональных данных
-					</label>
-					<a class="landing-block__button" href="#">Отправить заявку</a>
+                    <label class="form__label--checkbox">
+                        <input type="checkbox">Я согласен с <a class="form__link" href="#">политикой конфиденциальности</a> и даю согласие на обработку персональных данных
+                    </label>
+                    <a class="landing-block__button" href="#">Отправить заявку</a>
                 </form>
             </article>
         </main>
