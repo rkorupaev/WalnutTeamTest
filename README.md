@@ -1,2 +1,2 @@
 # WalnutTeamTest
-Test task to aplly
+Test task to apply
