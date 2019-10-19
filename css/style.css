@@ -1,4 +1,6 @@
 .body-container {
+    display: flex;
+    flex-direction: column;
     max-width: 320px;
     margin: 0 auto;
     color: white;
@@ -15,6 +17,10 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 15px;
+}
+
+.main-nav__desktop {
+    display: none;
 }
 
 .main-nav__logo-wrapper {
@@ -83,100 +89,6 @@
 
 .main-nav__list {
     display: none;
-}
-
-.site-list {
-    z-index: 1;
-    list-style: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: white;
-    color: black;
-
-    margin: 0;
-    padding: 0 30px;
-    width: 244px;
-}
-
-.site-list__button {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 22px;
-}
-
-.site-list__button a {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-}
-
-.site-list__button a::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 16px;
-    height: 3px;
-    top: 7px;
-    left: 0px;
-    transform: rotate(45deg);
-    background-color: #555555;
-}
-
-.site-list__button a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 16px;
-    height: 3px;
-    top: 7px;
-    left: 0px;
-    transform: rotate(-45deg);
-    background-color: #555555;
-}
-
-.site-list__item {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 600;
-    margin-bottom: 29px;
-}
-
-.site-list__item a {
-    text-decoration: none;
-    color: black;
-}
-
-.site-list__text {
-    font-size: 12px;
-    line-height: 16px;
-    margin-bottom: 25px;
-}
-
-.site-list__text a {
-    color: #5cb6da;
-    text-decoration: none;
-}
-
-.site-list__whatsapp-button {
-    display: block;
-    width: 100%;
-    height: 45px;
-    margin-bottom: 25px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 45px;
-    font-weight: 600;
-    background-color: #313131;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.site-list__whatsapp-button a {
-    color: white;
-    text-decoration: none;
 }
 
 .main-nav__phone {
@@ -344,6 +256,102 @@ input.form__input:-ms-input-placeholder {
     margin-bottom: 88px;
 }
 
+@media (max-width: 1289px) {
+    .site-list {
+        z-index: 1;
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        color: black;
+
+        margin: 0;
+        padding: 0 30px;
+        width: 244px;
+    }
+
+    .site-list__button {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 22px;
+    }
+
+    .site-list__button a {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+    }
+
+    .site-list__button a::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 3px;
+        top: 7px;
+        left: 0px;
+        transform: rotate(45deg);
+        background-color: #555555;
+    }
+
+    .site-list__button a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 3px;
+        top: 7px;
+        left: 0px;
+        transform: rotate(-45deg);
+        background-color: #555555;
+    }
+
+    .site-list__item {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 600;
+        margin-bottom: 29px;
+    }
+
+    .site-list__item a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .site-list__text {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 25px;
+    }
+
+    .site-list__text a {
+        color: #5cb6da;
+        text-decoration: none;
+    }
+
+    .site-list__whatsapp-button {
+        display: block;
+        width: 100%;
+        height: 45px;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 45px;
+        font-weight: 600;
+        background-color: #313131;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .site-list__whatsapp-button a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
 @media (min-width: 768px) {
     .body-container {
         max-width: 768px;
@@ -377,7 +385,7 @@ input.form__input:-ms-input-placeholder {
     }
 
     .landing-block {
-        min-height: 474px;
+        min-height: 374px;
         padding-top: 100px;
 
         background-image: url("../img/background-image-tablet.jpg");
@@ -425,5 +433,44 @@ input.form__input:-ms-input-placeholder {
     .landing-block__button {
         width: 330px;
         align-self: center;
+        margin-bottom: 52px;
     }
+}
+
+@media (min-width: 1290px) {
+    .body-container {
+        max-width: 1920px;
+    }
+
+    .page-header {
+        width: 1290px;
+        align-self: center;
+    }
+
+    .main-nav {
+        padding: 0;
+    }
+
+    .main-nav__toggler {
+        display: none;
+    }
+
+    .main-nav__desktop {
+        display: block;
+    }
+
+    .site-list {
+        list-style: none;
+        display: flex;
+    }
+
+    .site-list a {
+        color: white;
+        text-decoration: none;
+    } 
+
+    .landing-block {
+        min-height: 700px;
+    }
+
 }
