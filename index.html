@@ -7,8 +7,9 @@
     <title>SNOW ALP: Очистка снега и наледи с крыш</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    
 </head>
 
 <body>
@@ -18,7 +19,7 @@
                 <ul class="main-nav__upper-block upper-block">
                     <li class="upper-block__text">Снег и лед могут появится неожидано, <strong> поэтому мы работаем 24/7</strong></li>
                     <li class="upper-block__text upper-block__text--color-blue">Мы открыты для предложений и идей — <a href="#">hello@snow-alp.ru</a></li>
-                    <li class="upper-block__text upper-block__text--color-blue">Мы легко можем перезвонить сами — <a href="#">обратный звонок</a></li>
+                    <li class="upper-block__text upper-block__text--color-blue">Мы легко можем перезвонить сами — <a data-fancybox data-src="#request-modal" href="javascript:;">обратный звонок</a></li>
                 </ul>
                 <div class="main-nav__logo-wrapper">
                     <a class="main-nav__logo">ТУТ будет ЛОГО</a>
@@ -39,7 +40,7 @@
                     <li class="site-list__item"><a href="#">Контакты</a></li>
                     <li class="site-list__text">Снег и лед могут появится неожидано, <strong> поэтому мы работаем 24/7</strong></li>
                     <li class="site-list__text">Мы открыты для предложений и идей — <a href="#">hello@snow-alp.ru</a></li>
-                    <li class="site-list__text">Мы легко можем перезвонить сами — <a href="#">обратный звонок</a></li>
+                    <li class="site-list__text">Мы легко можем перезвонить сами — <a data-fancybox data-src="#request-modal" href="javascript:;">обратный звонок</a></li>
                     <li class="site-list__whatsapp-button"><a href="#">Написать в <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.66 65.19" width="26" height="26">
                                     <g data-name="Слой 2">
                                         <g data-name="Слой 1">
@@ -70,22 +71,22 @@
             </article>
         </main>
     </div>
-    <div class="modal-window">
+    <div class="modal-window" id="request-modal">
         <h2 class="modal-window__title">Заявка на обратный звонок</h2>
         <p class="modal-window__text">Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
         <form class="modal-window__form form">
-            <div class="form__input-wrapper">
-                <input class="form__input form__input--name" type="text" placeholder="Константин Сыромятников" required></input>
-                <input class="form__input form__input--tel" type="tel" placeholder="+7 ( ___ ) ___ - __ - __" required></input>
+            <div class="form__input-wrapper form__input-wrapper--modal">
+                <input class="form__input form__input--name form__input--margin form__input--modal" type="text" placeholder="Константин Сыромятников" required></input>
+                <input class="form__input form__input--tel form__input--modal" type="tel" placeholder="+7 ( ___ ) ___ - __ - __" required></input>
             </div>
-            <label class="form__label">
-                <input type="checkbox" class="form__checkbox" checked><span></span>Я согласен с <a class="form__link" href="#">политикой конфиденциальности</a> и даю согласие на обработку персональных данных
+            <label class="form__label form__label--modal">
+                <input type="checkbox" class="form__checkbox" checked><span></span>Я согласен с <a class="form__link form__link--modal" href="#">политикой конфиденциальности</a> и даю согласие на обработку персональных данных
             </label>
-            <button class="form__button" href="#">Отправить заявку</button>
+            <button class="form__button form__button--modal" href="#">Перезвоните мне</button>
         </form>
     </div>
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

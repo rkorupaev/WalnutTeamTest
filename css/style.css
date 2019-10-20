@@ -362,7 +362,7 @@ input.form__input:hover:-ms-input-placeholder {
     margin-bottom: 26px;
 }
 
-.form__label a {
+.form__link {
     color: #50b1d7;
 }
 
@@ -422,6 +422,59 @@ input.form__input:hover:-ms-input-placeholder {
 .form__button:focus {
     background-color: #ffe640;
     color: black;
+}
+
+.modal-window {
+    font-family: "Montserrat", "Arial", sans-serif;
+    width: 290px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #49add4;
+    border-radius: 15px;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.modal-window__title {
+    margin: 0 auto;
+    margin-top: 58px;
+    margin-bottom: 27px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+    width: 235px;
+}
+
+.modal-window__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.form__input--margin {
+    margin-bottom: 23px;
+}
+
+.form__label--modal {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.form__link--modal {
+    color: white;
+}
+
+.form__button--modal {
+    background-color: #313131;
+    margin: 0 auto;
+    margin-bottom: 54px;
 }
 
 @media (min-width: 768px) {
@@ -506,6 +559,29 @@ input.form__input:hover:-ms-input-placeholder {
         width: 330px;
         align-self: center;
         margin-bottom: 52px;
+    }
+
+    .modal-window {
+        width: 513px;
+        padding-left: 46px;
+        padding-right: 41px;
+    }
+
+    .modal-window__text {
+        width: 305px;
+        align-self: center;
+    }
+
+    .form__input-wrapper--modal {
+        flex-direction: column;
+    }
+
+    .form__input--modal {
+        width: 100%;
+    }
+
+    .modal-window__title {
+        width: 290px;
     }
 }
 
