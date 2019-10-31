@@ -432,7 +432,8 @@ input.form__input:hover:-ms-input-placeholder {
     background-color: #49add4;
     border-radius: 15px;
     color: white;
-    
+    min-height: 623px;
+
     display: flex;
     flex-direction: column;
     display: none;
@@ -474,7 +475,25 @@ input.form__input:hover:-ms-input-placeholder {
 .form__button--modal {
     background-color: #313131;
     margin: 0 auto;
-    margin-bottom: 54px;
+    margin-bottom: 27px;
+    height: 62px;
+}
+
+.form__invalid-text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 38px;
+    display: none;
+}
+
+.modal-window__success {
+    display: none;
+    min-height: 322px;
+    
+    background-image: url("../img/tick.png");
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
 }
 
 @media (min-width: 768px) {
@@ -583,6 +602,10 @@ input.form__input:hover:-ms-input-placeholder {
     .modal-window__title {
         width: 290px;
     }
+
+    .form__button--modal {
+        margin-bottom: 27px;
+    }
 }
 
 @media (min-width: 1290px) {
@@ -682,6 +705,11 @@ input.form__input:hover:-ms-input-placeholder {
 
     .form__button {
         height: 70px;
+    }
+
+    .form__button--modal {
+        margin-bottom: 27px;
+        height: 62px;
     }
 
 }

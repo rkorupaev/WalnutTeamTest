@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
 </head>
 
 <body>
@@ -66,7 +65,7 @@
                     <label class="form__label">
                         <input type="checkbox" class="form__checkbox" checked><span></span>Я согласен с <a class="form__link" href="#">политикой конфиденциальности</a> и даю согласие на обработку персональных данных
                     </label>
-                    <button class="form__button" href="#">Отправить заявку</button>
+                    <button class="form__button" type="submit" data-fancybox data-src="#request-success" href="javascript:;">Отправить заявку</button>
                 </form>
             </article>
         </main>
@@ -82,11 +81,21 @@
             <label class="form__label form__label--modal">
                 <input type="checkbox" class="form__checkbox" checked><span></span>Я согласен с <a class="form__link form__link--modal" href="#">политикой конфиденциальности</a> и даю согласие на обработку персональных данных
             </label>
-            <button class="form__button form__button--modal" href="#">Перезвоните мне</button>
+            <button class="form__button form__button--modal" type="submit" data-fancybox data-src="#request-success" href="javascript:;">Перезвоните мне</button>
+            <p class="form__invalid-text">Вы не заполнили необхофдимые поля.<br>
+                Заполните недостающие данные для отправки заявки</p>
         </form>
     </div>
+    <div class="modal-window modal-window__success" id="request-success">
+        <h2 class="modal-window__title">Заявка успешно отправлена!</h2>
+        <p class="modal-window__text">Спасибо за оставленную заявку, менеджер свяжется с вами в течение 15 минут</p>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/modal-window.js"></script>
+    <script src="js/landing-block.js"></script>
 </body>
 
 </html>
